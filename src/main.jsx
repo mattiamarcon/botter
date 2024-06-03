@@ -8,11 +8,17 @@ import {
 } from "react-router-dom";
 import Error from "./components/Error.jsx";
 import Home from './pages/Home.jsx';
+import Azienda from './pages/Azienda.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <Error />
+  },
+  {
+    path: "/azienda",
+    element: <Azienda />,
     errorElement: <Error />
   },
 ]);
