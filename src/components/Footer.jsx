@@ -18,7 +18,7 @@ export default function Footer(){
                 </div>
                 <div className="md:ml-16 w-full md:w-2/5 flex flex-col">
                     <p className="text-2xl underline underline-offset-4 my-3 md:my-1">ORARI:</p>
-                    <div className="w-5/6 sm:w-3/5 md:w-full xl:w-2/3 lg:w-4/5 flex flex-col mx-auto">
+                    <div className="w-full sm:w-3/5 md:w-full xl:w-2/3 lg:w-4/5 flex flex-col mx-auto">
                         <div className="w-full flex flex-row justify-between my-1 mx-auto px-3">
                             <p>Lunedì-Venerdì: </p>
                             <div className="flex flex-col ml-5">
