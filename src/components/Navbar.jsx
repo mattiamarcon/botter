@@ -21,7 +21,7 @@ export default function Navbar(){
             <nav className="h-24 flex flex-row justify-between z-20 cursor-pointer relative bg-blue-900 ">
                 <Link to={"/"} className="md:mx-auto ml-8 my-auto"><img src="logo.png" alt="" className="h-9" /></Link>
                 <img src={logo} alt="" className="md:hidden p-4" onClick={changeLogo} />
-                <ul className="md:w-4/5 md:flex md:flex-row md:justify-evenly items-center hidden">
+                <ul className="md:w-3/4 md:flex md:flex-row md:justify-evenly items-center hidden">
                     <NavbarElements />
                 </ul>
             </nav>
