@@ -10,10 +10,10 @@ export default function Footer(){
                     <p className="my-1">21046 Oderzo (TV)</p>
                     <a href="tel:+390422814090" className="my-1 cursor-pointer hover:text-black">Telefono: 0422 814090</a>
                     <a href="mailto:info@botterautomobili.com" className="my-1 cursor-pointer hover:text-black">Email: info@botterautomobili.com</a>
-                    <p className="my-1">P.IVA 01752260262</p>
-                    <div className="flex flex-row w-fit mx-auto my-1">
-                        <img src="facebook.svg" alt="" className="h-8"/>
-                        <a href="https://www.facebook.com/Botterautomobili/" target="_blank" className="text-black  cursor-pointer my-auto">Botterautomobili</a>
+                    <p className="">P.IVA 01752260262</p>
+                    <div className="flex flex-row w-fit mx-auto">
+                        <a href="https://www.facebook.com/Botterautomobili/" target="_blank" className="text-black  cursor-pointer my-auto"><img src="facebook.svg" alt="" className="h-12"/></a>
+                        <a href="https://www.autoscout24.it/concessionari/f-lli-botter-automobili-snc#atype=C&cid=3829641&ustate=U,N,A&sort=price&results=20&page=1" target="_blank" className="text-black  cursor-pointer my-auto"><img src="autoscout.svg" alt="" className="ml-5 h-32"/></a>
                     </div>
                 </div>
                 <div className="md:ml-16 w-full md:w-2/5 flex flex-col">

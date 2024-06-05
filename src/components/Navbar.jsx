@@ -2,18 +2,35 @@ import Headroom from "react-headroom";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarElements from "./NavbarElements";
+import { motion } from "framer-motion"
 
 export default function Navbar(){
 
     const [logo,setLogo]=useState("burger.svg");
+    const [isVisible, setIsVisible] = useState(false);
+
+    const show = {
+        opacity: 1,
+        display: "block"
+    };
+      
+    const hide = {
+        opacity: 0,
+        transitionEnd: {
+            display: "none"
+        }
+    };
 
     function changeLogo(){
-        if(logo==="burger.svg")
-            setLogo("close.svg");
-        else
-            setLogo("burger.svg");
-
+        setIsVisible(!isVisible)
         document.getElementById("navbarElements").classList.toggle("hidden");
+
+        if(logo==="burger.svg"){
+            setLogo("close.svg"); 
+        }   
+        else{
+            setLogo("burger.svg");
+        }
     }
 
     return (
@@ -25,9 +42,9 @@ export default function Navbar(){
                     <NavbarElements />
                 </ul>
             </nav>
-            <ul id="navbarElements" className="flex items-center hidden absolute w-full bg-blue-900 flex-col md:hidden">
+            <motion.ul id="navbarElements" className="items-center absolute w-full bg-blue-900 flex-col md:hidden" animate={isVisible ? show : hide} >
                 <NavbarElements />
-            </ul>
+            </motion.ul>
         </Headroom>
     );
 }

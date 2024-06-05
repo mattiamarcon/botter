@@ -10,6 +10,8 @@ import Error from "./components/Error.jsx";
 import Home from './pages/Home.jsx';
 import Azienda from './pages/Azienda.jsx';
 import Servizi from './pages/Servizi.jsx';
+import Contatti from './pages/Contatti.jsx';
+import Orari from './components/Orari.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,16 @@ const router = createBrowserRouter([
   {
     path: "/servizi",
     element: <Servizi />,
+    errorElement: <Error />
+  },
+  {
+    path: "/contatti",
+    element: <Contatti />,
+    errorElement: <Error />
+  },
+  {
+    path: "/orari",
+    element: <Orari />,
     errorElement: <Error />
   },
 ]);
