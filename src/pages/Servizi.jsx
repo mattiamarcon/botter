@@ -13,7 +13,7 @@ export default function Servizi(){
 
             <div className="flex flex-col lg:flex-row w-full">
                 <img src="foto/omino.jpg" alt="" className="lg:w-2/5 p-5 mx-auto h-auto" />
-                <div className="mx-auto w-3/4 lg:w-2/5 lg:px-16 lg:py-5 my-5 text-xl flex flex-col justify-evenly lg:rounded-lg lg:border-2 lg:border-blue-900">
+                <div className="mx-auto w-3/4 lg:w-2/5 lg:px-16 lg:py-5 xl:py-0 my-5 text-xl flex flex-col justify-evenly lg:rounded-lg lg:border-2 lg:border-blue-900">
                     <h1 className="text-4xl text-center font-semibold mb-3">Vendita</h1>
                     <motion.ul className="list-disc" initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:1}}>
                         <li className="my-2">Ricerca vetture usate tutte marche non disponibili a stock</li>
