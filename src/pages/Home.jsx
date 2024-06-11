@@ -34,12 +34,12 @@ export default function Home(){
                 <p className="text-center w-3/4 mx-auto text-3xl md:text-4xl xl:text-5xl font-semibold my-3">
                     Le nostre auto
                 </p>
-                <div className="w-2/3 sm:w-1/3 md:w-full lg:w-5/6 2xl:w-full flex flex-col md:flex-row justify-evenly flex-wrap mx-auto">
+                <div className="w-1/2 sm:w-1/3 md:w-full lg:w-5/6 2xl:w-full flex flex-col md:flex-row justify-evenly flex-wrap mx-auto">
                     <motion.img src="logos/abarth.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 h-44 my-4 " />      
                     <motion.img src="logos/fiat.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 h-44 my-4" />
                     <motion.img src="logos/jeep.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 h-44 my-4 " />
-                    <motion.img src="logos/lancia.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 md:w-fit h-32 w-2/3 my-4  " />
-                    <motion.img src="logos/suzuki.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 md:w-fit h-32 w-2/3 my-4  " />
+                    <motion.img src="logos/lancia.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 md:w-fit h-44 my-4  " />
+                    <motion.img src="logos/suzuki.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 md:w-fit h-44 my-4  " />
                     <motion.img src="logos/alfaromeo.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 h-44 my-4 bg-gray-600" />
                 </div>
             </div>
@@ -52,25 +52,3 @@ export default function Home(){
         </>
     )
 }
-
-/*
-<div className="w-full flex-nowrap">
-                    <ul className="flex flex-row">
-                        <li>
-                            <img src="logos/abarth.png" alt="" />
-                        </li>
-                        <li>
-                            <img src="logos/alfaromeo.jpg" alt="" />
-                        </li>
-                        <li>
-                            <img src="logos/fiat.png" alt="" />
-                        </li>
-                        <li>
-                            <img src="logos/jeep.svg" alt="" />
-                        </li>
-                        <li>
-                            <img src="logos/lancia.svg" alt="" />
-                        </li>
-                    </ul>
-                </div>
-*/
