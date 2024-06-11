@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { Carousel } from "flowbite-react";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
+import Figures from "../components/Figures";
+
+const Figurine=[
+    {title:"Professionalità",url:"icons/professionalita.svg"},
+    {title:"Esperienza",url:"icons/esperienza.svg"},
+    {title:"Sicurezza",url:"icons/sicurezza.svg"},
+]
 
 export default function Home(){
     return(
@@ -24,12 +31,20 @@ export default function Home(){
                     </Carousel>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row w-full lg:justify-evenly items-center my-5">
-                <motion.p initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:1}} className="text-center w-3/4 mx-auto text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-semibold my-3 md:w-1/3 xl:w-1/6">
+
+            <div className="flex flex-col lg:flex-row flex-wrap md:justify-evenly items-center">
+                {Figurine.map(f=>{
+                    return <Figures key={f.title} title={f.title} url={f.url}/>
+                })}
+            </div>
+
+            <div className="flex flex-col md:flex-row w-full lg:w-2/3 lg:justify-evenly items-center my-10 mx-auto">
+                <motion.p initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} transition={{duration:1}} className="text-center w-3/4 lg:w-1/2 mx-auto text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-semibold my-3 ">
                     Il nostro pensiero è riassumibile in 3 parole: Professionalità, Serietà e Cortesia.
                 </motion.p>
-                <img src="foto/verticalLancia.jpg" alt="" className="h-96 md:h-fit md:w-1/3 my-3 mx-auto" />
+                <img src="foto/verticalLancia.jpg" alt="" className="h-96 lg:h-[600px] xl:h-[700px] lg:w-auto md:w-1/3 my-3 mx-auto" />
             </div>
+
             <div className="w-full flex flex-col">
                 <p className="text-center w-3/4 mx-auto text-3xl md:text-4xl xl:text-5xl font-semibold my-3">
                     Le nostre auto
@@ -43,10 +58,7 @@ export default function Home(){
                     <motion.img src="logos/alfaromeo.png" initial={{opacity:0}} transition={{duration:2}} whileInView={{opacity:1}} className="md:h-52 h-44 my-4 bg-gray-600" />
                 </div>
             </div>
-            
-            
 
-            
             <Footer />
             
         </>
